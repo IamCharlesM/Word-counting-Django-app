@@ -1,5 +1,7 @@
 <h1>There are {{count}} words in your text</h1>
 
+<h2><a href="{% url 'home'%}">Start again</a> | <a href="{% url 'about' %}">about</a></h2>
+
 <h2>What you entered:</h2>
 {{fulltext}}
 
@@ -9,4 +11,5 @@
 
     {{word}} - {{counttotal}}
     <br>
+
 {%endfor%}
